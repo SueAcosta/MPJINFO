@@ -8,19 +8,17 @@ html{
 .opcion{
     margin-top: 20px;
 }
-/*.opcion :hover{
- background-color: white;
-    border-radius: 10px;
-  color: red;
+.opcion :hover{
+ background-color: rgb(170, 43, 43);
+    border-radius: 8px;
+ 
 
-}*/
-
+}
  /* Botón de idioma */
  .language-selector {
     position: relative;
     display: inline-block;
 }
-
 .language-button {
     background: none;
     border: none;
@@ -31,13 +29,11 @@ html{
     align-items: center;
     gap: 5px;
 }
-
 /* Iconos de banderas */
 .flag-icon {
     width: 20px;
     height: 14px;
 }
-
 /* Menú desplegable */
 .dropdown-content {
     display: none;
@@ -107,7 +103,7 @@ html{
 .cuadrito{
     position: absolute;
     margin-left: 350px;
-    width: 600px;
+    width: 400px;
     
     
 }

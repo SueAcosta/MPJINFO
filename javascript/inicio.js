@@ -15,7 +15,10 @@ const translations = {
         descrip4: "Nos especializamos en la oferta al por mayor de una diversidad de marcas reconocidas, ofreciendo los mejores productos para nuestros clientes.",
         titulo5: "Visita Nuestro Catálogo!",
         descrip5: "lorem lorem",
-        ver: "Ver Más!"
+        ver: "Ver Más!",
+        redes: "Redes",
+        ubi: "Ubicación",
+        tel: "Teléfonos"
     },
     en: {
         item1: "Home",
@@ -33,7 +36,10 @@ const translations = {
         descrip4: "We specialize in the wholesale supply of a variety of recognized brands, offering the best products for our customers.",
         titulo5: "Visit Our Catalog!",
         descrip5: "lorem lorem",
-        ver: "More!"
+        ver: "More!",
+        redes: "Social networks",
+        ubi: "Location",
+        tel: "Phones"
     }
 };
 
@@ -60,6 +66,9 @@ function loadContent(lang) {
     document.getElementById('titulo5').innerText = content.titulo5;
     document.getElementById('descrip5').innerText = content.descrip5;
     document.getElementById('ver').innerText = content.ver;
+    document.getElementById('redes').innerText = content.redes;
+    document.getElementById('ubi').innerText = content.ubi;
+    document.getElementById('tel').innerText = content.tel;
 
 
     // Cambia la bandera y el texto del botón principal según el idioma
