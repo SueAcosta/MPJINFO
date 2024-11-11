@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MPJ Internacional</title>
+    <link rel="stylesheet" href="css/inicio.css">
+
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+  
+    <header>
+      <div class="px-3 py-2 menu border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <img src="img/logo-sinfondo.png" alt="">
+            </a>
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small opcion">
+              <li>
+                <a id="item1" href="inicio.html" class="nav-link text-white color text-center" >in</a>
+              </li>
+              <li>
+                <a href="./navegacion/somos.html" class="nav-link text-white" id="item2"></a>
+              </li>
+              <li>
+                <a href="https://mpjzl.com/webcliente" target="_blank" class="nav-link text-white" id="item3"></a>
+              </li>
+              <li>
+                <a href="./navegacion/contacto.html" class="nav-link text-white" id="item4"></a>
+              </li>
+            </ul>
+            <div class="language-selector">
+              <button class="language-button">
+                  <img src="flag-es.png" alt="Español" class="flag-icon">
+                  Español
+              </button>
+              <div class="dropdown-content">
+                  <button onclick="setLanguage('es')">
+                      <img src="flag-es.png" alt="Español" class="flag-icon">
+                      Español
+                  </button>
+                  <button onclick="setLanguage('en')">
+                      <img src="flag-en.png" alt="English" class="flag-icon">
+                      English
+                  </button>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cover">
+        <div class="circulito_blanco">
+          <img class="imagen" src="img/circulo.png" alt="">
+        </div>
+        
+        <div class="cover-content cuadrito">
+          <h1 id="titulo1"></h1>
+          <h1 id="titulo2"></h1>
+            <p id="descrip1"></p>
+            <a href="./navegacion/somos.html" class="btn btn-primary" id="mas"></a>
+        </div>
+    </div>
+
+<!-- Contenido de la página -->
+
+      <section class="py-5">
+        <div class="container">
+            <h2 class="display-4 text-center mb-4" id="titulo3"></h2>
+            <p class="lead text-justify" id="descrip2"></p>
+            <p class="lead text-justify" id="descrip3"></p>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-5 info">
+          <h2 id="titulo4"></h2>
+          <p id="descrip4"></p>
+        </div>
+        <div class="col-md-7">
+          <div id="companyCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col"><img src="./img/logos/oska.png" class="d-block w-100" alt="Compañía 1"></div>
+                  <div class="col"><img src="./img/logos/samsung.png" class="d-block w-100" alt="Compañía 2"></div>
+                  <div class="col"><img src="./img/logos/indurama.png" class="d-block w-100" alt="Compañía 3"></div>
+                  <div class="col"><img src="./img/logos/hisense.png" class="d-block w-100" alt="Compañía 4"></div>
+                  <div class="col"><img src="./img/logos/lg.png" class="d-block w-100" alt="Compañía 5"></div>
+                </div>
+                <div class="row">
+                  <div class="col"><img src="./img/logos/futura.png" class="d-block w-100" alt="Compañía 6"></div>
+                  <div class="col"><img src="./img/logos/feather.png" class="d-block w-100" alt="Compañía 7"></div>
+                  <div class="col"><img src="./img/logos/easy.png" class="d-block w-100" alt="Compañía 8"></div>
+                  <div class="col"><img src="./img/logos/Bombay.png" class="d-block w-100" alt="Compañía 9"></div>
+                  <div class="col"><img src="./img/logos/weston.png" class="d-block w-100" alt="Compañía 10"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col"><img src="./img/logos/gree.png" class="d-block w-100" alt="Compañía 11"></div>
+                  <div class="col"><img src="./img/logos/hawking.png" class="d-block w-100" alt="Compañía 12"></div>
+                  <div class="col"><img src="./img/logos/home.png" class="d-block w-100" alt="Compañía 13"></div>
+                  <div class="col"><img src="./img/logos/indurama.png" class="d-block w-100" alt="Compañía 14"></div>
+                  <div class="col"><img src="./img/logos/beauty.png" class="d-block w-100" alt="Compañía 15"></div>
+                </div>
+                <div class="row">
+                  <div class="col"><img src="./img/logos/asphalt.png" class="d-block w-100" alt="Compañía 16"></div>
+                  <div class="col"><img src="./img/logos/midea.png" class="d-block w-100" alt="Compañía 17"></div>
+                  <div class="col"><img src="./img/logos/kitchen.png" class="d-block w-100" alt="Compañía 18"></div>
+                  <div class="col"><img src="./img/logos/izumizato.png" class="d-block w-100" alt="Compañía 19"></div>
+                  <div class="col"><img src="./img/logos/leostar.png" class="d-block w-100" alt="Compañía 20"></div>
+                </div>
+                                
+              </div>
+                <div class="carousel-item">
+                <div class="row">
+                  <div class="col"><img src="./img/logos/nitrite.png" class="d-block w-100" alt="Compañía 16"></div>
+                  <div class="col"><img src="./img/logos/rasberrie.png" class="d-block w-100" alt="Compañía 17"></div>
+                  <div class="col"><img src="./img/logos/tiana.png" class="d-block w-100" alt="Compañía 18"></div>
+                  <div class="col"><img src="./img/logos/romance.png" class="d-block w-100" alt="Compañía 19"></div>
+                </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="img/catalogo.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" id="titulo5" ></h1>
+          <p id="descrip5" class="lead"></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button  type="button" class="btn btn-danger btn-lg px-4 me-md-2 "><a class="text-decoration-none text-white" href="https://mpjzl.com/WebCliente/" target="_blank" rel="noopener noreferrer" id="ver"></a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top pie">
+      <div class="">
+  
+      </div>
+  
+      <div class="col mb-3 ">
+        <a href="inicio.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="img/logo-sinfondo.png" alt="">
+        </a>
+        <p class=" text-white">&copy; 2024</p>
+  
+      </div>
+  
+      
+  
+      <div class="col mb-3">
+        <h5>Redes</h5>
+        <ul class="nav flex-column  text-white color redes ">
+          <a href="https://www.instagram.com/mpjinternational" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i  class="bi bi-instagram"> Instagram</i></li></a>
+          <a href="https://www.facebook.com/mpjinternationalpanama?mibextid=LQQJ4d" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-facebook"> Facebook</i></li></a>
+          <a href="https://www.tiktok.com/@mpjinternational.zl" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-tiktok"> Tiktok</i></li></a>
+          <a href="https://api.whatsapp.com/send?phone=50768361715" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-whatsapp"> Whatsapp</i></li></a>
+          
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Ubicación</h5>
+        <ul class="nav flex-column">
+          <a href="https://www.google.com/maps/place/MPJ+International+Zona+Libre+S.A./@9.3545053,-79.8943296,17z/data=!4m6!3m5!1s0x8fab6dae320edfa5:0x7f8a4453b6f78a20!8m2!3d9.3545053!4d-79.8943296!16s%2Fg%2F11s6j3n82f?entry=ttu" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-geo-alt-fill"> Calle 14 Ave. Rooselt, Zona Libre de Colón, Rep. de Panamá</i></li></a>
+        </ul>
+
+        <h5>Teléfonos</h5>
+        <ul class="nav flex-column">
+           <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0001</i></li>
+           <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0002</i></li>
+           <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0003</i></li>
+        </ul>
+
+      </div>
+     
+  
+  
+      
+    </footer>
+  
+
+<script src="./javascript/inicio.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>
