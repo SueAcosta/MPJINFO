@@ -1,24 +1,60 @@
-html{
+html {
     height: 100%;
 }
+
 /*---------------------------------------NAV---------------------------------*/
-.menu{
+.menu {
     background-color: red;
 }
-.opcion{
+
+.opcion {
     margin-top: 20px;
 }
-.opcion :hover{
- background-color: rgb(170, 43, 43);
-    border-radius: 8px;
- 
 
+.opcion :hover {
+    background-color: rgb(170, 43, 43);
+    border-radius: 8px;
 }
- /* Botón de idioma */
- .language-selector {
+
+/* Menú hamburguesa */
+.navbar-toggler {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Menú responsive */
+#navbarMenu {
+    display: flex;
+}
+
+/* Ocultar el menú en pantallas pequeñas y mostrar solo cuando esté activo */
+@media (max-width: 992px) {
+    #navbarMenu {
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column; /* Coloca las opciones en columna */
+        background-color: red;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+        padding: 10px;
+    }
+    
+    /* Mostrar el menú cuando esté activo */
+    #navbarMenu.active {
+        display: flex;
+    }
+}
+
+/* Botón de idioma */
+.language-selector {
     position: relative;
     display: inline-block;
 }
+
 .language-button {
     background: none;
     border: none;
@@ -29,17 +65,19 @@ html{
     align-items: center;
     gap: 5px;
 }
+
 /* Iconos de banderas */
 .flag-icon {
     width: 20px;
     height: 20px;
 }
+
 /* Menú desplegable */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     min-width: 120px;
     z-index: 1;
     right: 0;
@@ -58,7 +96,7 @@ html{
     gap: 5px;
 }
 
-/* Mostrar el menú al hacer hover */
+/* Mostrar el menú desplegable al hacer hover */
 .language-selector:hover .dropdown-content {
     display: block;
 }
@@ -78,6 +116,7 @@ html{
     color: white;
     overflow: hidden;
 }
+
 .cover-content {
     position: absolute;
     top: 50%;
@@ -87,31 +126,41 @@ html{
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
- 
+
 }
+
 .cover-content h1 {
     font-size: 4rem;
     margin-bottom: 20px;
 }
+
 .cover-content p {
     font-size: 1.25rem;
     margin-bottom: 30px;
 }
+
 .cover-content .btn-primary {
     font-size: 1.25rem;
 }
-.cuadrito{
+
+.cuadrito {
     position: absolute;
     margin-left: 320px;
-    width: 600px;  
+    width: 600px;
 }
-.imagen{
+
+.imagen {
     height: 480px;
     margin-left: 210px;
-   margin-top: 10px;
-   border-radius: 1950px;
+    margin-top: 10px;
+    border-radius: 1950px;
 }
-.circulito_blanco{
+
+.imagensita {
+    border-radius: 80px;
+}
+
+.circulito_blanco {
     position: absolute;
     background: white;
     width: 850px;
@@ -123,26 +172,30 @@ html{
 
 /*--------------------------CARROUSEL-------------------------------------*/
 .carousel-item img {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
 
 }
-.carousel-item .row + .row {
-  margin-top: 10px;
+
+.carousel-item .row+.row {
+    margin-top: 10px;
 }
-.info{
+
+.info {
     text-align: justify;
 }
+
 /*-------------------------PIE DE PAGINA --------------------------------*/
-.pie{
+.pie {
     background-color: red;
     color: white;
- margin-bottom: -100px;
- padding-bottom: -100px;
+    margin-bottom: -100px;
+    padding-bottom: -100px;
     max-width: 100.9%;
     max-height: 100%;
 }
-.redes{
+
+.redes {
     color: white;
 }
 
@@ -155,37 +208,48 @@ html{
     background-color: #f8f9fa;
     border: 1px solid #e3e6ea;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px 0;
 }
+
 .contact-box .text-content {
     flex: 1;
     margin-right: 20px;
 }
+
 .contact-box .info-content {
     flex: 1;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .contact-box .info-content h4 {
     margin-top: 0;
 }
+
 .contact-box .info-content .icon {
     margin-right: 10px;
 }
-p{
+
+p {
     text-align: justify;
 }
- 
+
 
 /*---------------------boton flotante---------------------*/
-.typing::after { content: '|'; animation: blink 0.7s infinite; }
-
-        /* Animación de parpadeo del cursor */
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            50%, 100% { opacity: 0; }
-        }
+.typing::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+/* Animación de parpadeo del cursor */
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50%,100% {
+        opacity: 0;
+    }
+}

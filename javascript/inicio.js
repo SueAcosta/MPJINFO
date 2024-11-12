@@ -83,3 +83,8 @@ function loadContent(lang) {
 // Cargar el idioma almacenado en la última visita o usar español por defecto
 const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
 loadContent(savedLanguage);
+
+function toggleMenu() {
+    const navbarMenu = document.getElementById('navbarMenu');
+    navbarMenu.classList.toggle('active');
+}

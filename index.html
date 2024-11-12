@@ -16,70 +16,73 @@
     <header>
       <div class="px-3 py-2 menu border-bottom">
         <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <img src="img/logo-sinfondo.png" alt="">
-            </a>
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small opcion">
-              <li>
-                <a id="item1" href="index.html" class="nav-link text-white color text-center" ></a>
-              </li>
-              <li>
-                <a href="./navegacion/somos.html" class="nav-link text-white" id="item2"></a>
-              </li>
-              <li>
-                <a href="https://mpjzl.com/webcliente" target="_blank" class="nav-link text-white" id="item3"></a>
-              </li>
-              <li>
-                <a href="./navegacion/contacto.html" class="nav-link text-white" id="item4"></a>
-              </li>
-            </ul>
-            <div class="language-selector">
-              <button class="language-button">
-                  <img src="./img/es.png" alt="Español" class="flag-icon">
-                  Español
-              </button>
-              <div class="dropdown-content">
-                  <button onclick="setLanguage('es')">
-                      <img src="./img/es.png" alt="Español" class="flag-icon">
-                      Español
-                  </button>
-                  <button onclick="setLanguage('en')">
-                      <img src="./img/en.png" alt="English" class="flag-icon">
-                      English
-                  </button>
-              </div>
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="cover">
-        <div class="circulito_blanco">
-          <img class="imagen" src="./img/copia.jpg" alt="">
-        </div>
-        
-        <div class="cover-content cuadrito">
-          <h1 id="titulo1" class="typing"></h1>
-          <h1 id="titulo2"></h1>
-            <p id="descrip1"></p>
-            <a href="./navegacion/somos.html" class="btn btn-primary" id="mas"></a>
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <!-- Logo -->
+                <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                    <img src="img/logo-sinfondo.png" alt="Logo" class="logo">
+                </a>
+                
+                <!-- Botón de menú hamburguesa (solo en pantallas pequeñas) -->
+                <button class="navbar-toggler d-lg-none text-white" onclick="toggleMenu()">
+                    &#9776;
+                </button>
+                
+                <!-- Opciones de navegación -->
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small opcion" id="navbarMenu">
+                    <li><a href="index.html" class="nav-link text-white color text-center" id="item1">Inicio</a></li>
+                    <li><a href="./navegacion/somos.html" class="nav-link text-white" id="item2">Nosotros</a></li>
+                    <li><a href="https://mpjzl.com/webcliente" target="_blank" class="nav-link text-white" id="item3">Clientes</a></li>
+                    <li><a href="./navegacion/contacto.html" class="nav-link text-white" id="item4">Contacto</a></li>
+                </ul>
+                
+                <!-- Selector de idioma -->
+                <div class="language-selector">
+                    <button class="language-button">
+                        <img src="./img/es.png" alt="Español" class="flag-icon"> Español
+                    </button>
+                    <div class="dropdown-content">
+                        <button onclick="setLanguage('es')">
+                            <img src="./img/es.png" alt="Español" class="flag-icon"> Español
+                        </button>
+                        <button onclick="setLanguage('en')">
+                            <img src="./img/en.png" alt="English" class="flag-icon"> English
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
+  
+      <div class="cover">
+        <div class="circulito_blanco">
+          <img class="imagen" src="./img/copia.jpg" alt="Cover Image">
+        </div>
+        <div class="cover-content cuadrito">
+          <h1 id="titulo1" class="typing"></h1>
+          <h1 id="titulo2">a Nuestra Web</h1>
+          <p id="descrip1">Explora nuestro sitio para conocer más.</p>
+          <button type="button" class="btn btn-danger btn-lg px-4 me-md-2">
+            <a class="text-decoration-none text-white" href="./navegacion/somos.html" target="_blank" id="mas">Saber Más</a>
+          </button>
+        </div>
+      </div>
+    </header>
+    
 
 <!-- Contenido de la página -->
     <section class="py-5">
         <div class="container">
-            <h2 class="display-4 text-center mb-4" id="titulo3"></h2>
-            <p class="lead text-justify" id="descrip2"></p>
-            <p class="lead text-justify" id="descrip3"></p>
+            <h2 class="display-6 fw-bold text-center lh-1 mb-3" id="titulo3"></h2>
+            <p class="text-justify" id="descrip2"></p>
+            <p class="text-justify" id="descrip3"></p>
         </div>
     </section>
 
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-5 info">
-          <h2 id="titulo4"></h2>
+          <h2 class="display-6 fw-bold text-body-emphasis lh-1 mb-3" id="titulo4"></h2>
           <p id="descrip4"></p>
         </div>
         <div class="col-md-7">
@@ -137,11 +140,11 @@
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-          <img src="img/catalogo.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          <img src="img/catalogo.jpg" class="d-block mx-lg-auto img-fluid imagensita" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" id="titulo5" ></h1>
-          <p id="descrip5" class="lead"></p>
+          <h3 class="display-6 fw-bold text-body-emphasis lh-1 mb-3" id="titulo5" ></h3>
+          <p id="descrip5" ></p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <button  type="button" class="btn btn-danger btn-lg px-4 me-md-2 "><a class="text-decoration-none text-white" href="https://mpjzl.com/WebCliente/" target="_blank" rel="noopener noreferrer" id="ver"></a></button>
           </div>
