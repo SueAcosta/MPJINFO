@@ -32,7 +32,7 @@ html{
 /* Iconos de banderas */
 .flag-icon {
     width: 20px;
-    height: 14px;
+    height: 20px;
 }
 /* Menú desplegable */
 .dropdown-content {
@@ -102,26 +102,25 @@ html{
 }
 .cuadrito{
     position: absolute;
-    margin-left: 350px;
-    width: 400px;
-    
-    
+    margin-left: 320px;
+    width: 600px;  
 }
 .imagen{
-    height: 600px;
-    margin-left: 180px;
-   margin-top: -40px;
-
+    height: 480px;
+    margin-left: 210px;
+   margin-top: 10px;
+   border-radius: 1950px;
 }
 .circulito_blanco{
     position: absolute;
     background: white;
-    width: 900px;
+    width: 850px;
     height: 900px;
     margin-top: 20px;
     border-radius: 1950px;
     margin-left: -200px;
 }
+
 /*--------------------------CARROUSEL-------------------------------------*/
 .carousel-item img {
   width: 50px;
@@ -140,7 +139,7 @@ html{
     color: white;
  margin-bottom: -100px;
  padding-bottom: -100px;
-    max-width: 100.5%;
+    max-width: 100.9%;
     max-height: 100%;
 }
 .redes{
@@ -177,5 +176,16 @@ html{
 .contact-box .info-content .icon {
     margin-right: 10px;
 }
+p{
+    text-align: justify;
+}
+ 
 
 /*---------------------boton flotante---------------------*/
+.typing::after { content: '|'; animation: blink 0.7s infinite; }
+
+        /* Animación de parpadeo del cursor */
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }

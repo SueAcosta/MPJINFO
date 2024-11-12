@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="./css/inicio.css">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/inicio.css">
     
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -16,48 +16,51 @@
       <div class="px-3 py-2 menu border-bottom">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <img src="img/logo-sinfondo.png" alt="">
+            <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <img src="../img/logo-sinfondo.png" alt="">
             </a>
-  
             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small opcion">
-              <li class="">
-                <a href="inicio.html" class="nav-link text-white color text-center">
-                  Inicio
-                </a>
-              </li>
-              
               <li>
-                <a href="somos.html" class="nav-link text-white">
-                  Nuestra Historia
-                </a>
+                <a id="item1" href="../index.html" class="nav-link text-white color text-center" ></a>
               </li>
               <li>
-                <a href="https://mpjzl.com/webcliente" target="_blank" class="nav-link text-white">
-                 Catálogo
-                </a>
+                <a href="somos.html" class="nav-link text-white" id="item2"></a>
               </li>
               <li>
-                <a href="contacto.html" class="nav-link text-white">
-                  Contacto
-                </a>
+                <a href="https://mpjzl.com/webcliente" target="_blank" class="nav-link text-white" id="item3"></a>
+              </li>
+              <li>
+                <a href="../navegacion/contacto.html" class="nav-link text-white" id="item4"></a>
               </li>
             </ul>
+            <div class="language-selector">
+              <button class="language-button">
+                  <img src="../img/es.png" alt="Español" class="flag-icon">
+                  Español
+              </button>
+              <div class="dropdown-content">
+                  <button onclick="setLanguage('es')">
+                      <img src="../img/es.png" alt="Español" class="flag-icon">
+                      Español
+                  </button>
+                  <button onclick="setLanguage('en')">
+                      <img src="../img/en.png" alt="English" class="flag-icon">
+                      English
+                  </button>
+              </div>
+          </div>
           </div>
         </div>
       </div>
-  
     
 
    <div class="container">
     <section class="contact-section py-5">
-        <h2 class="text-center mb-4">Ponte en Contacto con Nosotros</h2>
+        <h2 class="text-center mb-4" id="tit1" ></h2>
         <div class="contact-box">
             <div class="text-content">
-                <h3>Estamos aquí para ayudarte</h3>
-                <p>
-                    Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Nuestro equipo está disponible para resolver tus dudas y proporcionarte toda la asistencia que necesites.
-                </p>
+                <h3 id="tit2"></h3>
+                <p id="d1"></p>
             </div>
             <div class="info-content">
                 <div class="d-flex align-items-center mb-3">
@@ -65,8 +68,8 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div>
-                        <h4>Dirección:</h4>
-                        <p>Calle 14 Ave. Rooselt, Zona Libre de Colón, Rep. de Panamá</p>
+                        <h4 id="tit3"></h4>
+                        <p id="d2"></p>
                     </div>
                 </div>
                 <div class="d-flex align-items-center mb-3">
@@ -74,7 +77,7 @@
                         <i class="fas fa-phone-alt"></i>
                     </div>
                     <div>
-                        <h4>Teléfonos:</h4>
+                        <h4 id="tit4"></h4>
                         <p>472-0001</p>
                         <p>472-0002</p>
                         <p>472-0003</p>
@@ -85,19 +88,14 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <div>
-                        <h4>Correo Electrónico:</h4>
-                        <p>contacto@empresa.com</p>
+                        <h4 id="tit5"></h4>
+                        <p>customer@mpj.panama.com</p>
                     </div>
                 </div>
-               <!-- <div class="position-fixed bottom-0 end-0 p-3">
-                  <a href="https://wa.me/1234567890" target="_blank" class="btn btn-success btn-lg rounded-circle" style="width: 70px; height: 70px;">
-                    <i class="bi bi-whatsapp" style="font-size: 2rem;"></i>
-                  </a>
-                </div>-->
                 <div class="position-fixed bottom-0 end-0 p-3">
                   <div class="position-relative">
                     <div id="tooltip-bubble" class="position-absolute top-0 start-50 translate-middle-x p-2 bg-dark text-white rounded-pill" style="display: none;">
-                      Escríbenos
+                   Escribenos
                     </div>
                     <a href="https://api.whatsapp.com/send?phone=50768361715" target="_blank" class="btn btn-success btn-lg rounded-circle" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;" onmouseover="document.getElementById('tooltip-bubble').style.display = 'block';" onmouseout="document.getElementById('tooltip-bubble').style.display = 'none';">
                       <i class="bi bi-whatsapp" style="font-size: 2rem;"></i>
@@ -113,44 +111,51 @@
 
 
 
+
 <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top pie">
   <div class="">
 
   </div>
 
   <div class="col mb-3 ">
-    <a href="inicio.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-      <img src="img/logo-sinfondo.png" alt="">
+    <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+      <img src="../img/logo-sinfondo.png" alt="">
     </a>
     <p class=" text-white">&copy; 2024</p>
+
   </div>
 
+  
+
   <div class="col mb-3">
-    <h5>Redes</h5>
+    <h5 id="redes"></h5>
     <ul class="nav flex-column  text-white color redes ">
       <a href="https://www.instagram.com/mpjinternational" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i  class="bi bi-instagram"> Instagram</i></li></a>
       <a href="https://www.facebook.com/mpjinternationalpanama?mibextid=LQQJ4d" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-facebook"> Facebook</i></li></a>
       <a href="https://www.tiktok.com/@mpjinternational.zl" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-tiktok"> Tiktok</i></li></a>
       <a href="https://api.whatsapp.com/send?phone=50768361715" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-whatsapp"> Whatsapp</i></li></a>
+      
     </ul>
   </div>
 
   <div class="col mb-3">
-    <h5>Ubicación</h5>
+    <h5 id="ubi"></h5>
     <ul class="nav flex-column">
       <a href="https://www.google.com/maps/place/MPJ+International+Zona+Libre+S.A./@9.3545053,-79.8943296,17z/data=!4m6!3m5!1s0x8fab6dae320edfa5:0x7f8a4453b6f78a20!8m2!3d9.3545053!4d-79.8943296!16s%2Fg%2F11s6j3n82f?entry=ttu" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-geo-alt-fill"> Calle 14 Ave. Rooselt, Zona Libre de Colón, Rep. de Panamá</i></li></a>
     </ul>
 
-    <h5>Teléfonos</h5>
+    <h5 id="tel"></h5>
     <ul class="nav flex-column">
        <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0001</i></li>
        <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0002</i></li>
        <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0003</i></li>
     </ul>
-  </div>  
+  </div> 
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../javascript/contact.js"></script>
+<script src="../javascript/inicio.js"></script>
  </body>
 </html>

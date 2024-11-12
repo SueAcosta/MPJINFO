@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="css/inicio.css">
-    <link rel="stylesheet" href="css/somos.css">
+    <title>Nuestra Historia</title>
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../css/somos.css">
  
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -13,126 +13,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-  
     <header>
       <div class="px-3 py-2 menu border-bottom">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <img src="img/logo-sinfondo.png" alt="">
+            <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <img src="../img/logo-sinfondo.png" alt="">
             </a>
-  
             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small opcion">
-              <li><a href="inicio.html" class="nav-link text-white color text-center">Inicio </a></li>
-              <li><a href="somos.html" class="nav-link text-white">Nuestra Historia</a></li>
-              <li><a href="https://mpjzl.com/webcliente" target="_blank" class="nav-link text-white">Catálogo</a></li>
-              <li><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+              <li>
+                <a id="item1" href="../index.html" class="nav-link text-white color text-center" ></a>
+              </li>
+              <li>
+                <a href="somos.html" class="nav-link text-white" id="item2"></a>
+              </li>
+              <li>
+                <a href="https://mpjzl.com/webcliente" target="_blank" class="nav-link text-white" id="item3"></a>
+              </li>
+              <li>
+                <a href="../navegacion/contacto.html" class="nav-link text-white" id="item4"></a>
+              </li>
             </ul>
+            <div class="language-selector">
+              <button class="language-button">
+                  <img src="../img/es.png" alt="Español" class="flag-icon">
+                  Español
+              </button>
+              <div class="dropdown-content">
+                  <button onclick="setLanguage('es')">
+                      <img src="../img/es.png" alt="Español" class="flag-icon">
+                      Español
+                  </button>
+                  <button onclick="setLanguage('en')">
+                      <img src="../img/en.png" alt="English" class="flag-icon">
+                      English
+                  </button>
+              </div>
+          </div>
           </div>
         </div>
       </div>
-
-
-      <div class="container">
-        <h1 class="tit">Nuestra historia</h1>
-        
-        <div class="timeline">
-          
-          <div class="timeline-item left">
-            <div class="timeline-item-content">
-              <h3>Nuestros comienzos...</h3>
-              <p class="info">Nuestros orígenes son en Curacao, atendiendo todo el Caribe, como Aruba, St Lucia, Granada, Guyana, Barbados, Trinidad & Tobago, como clientes durante más de 30 años.</p>
-              <img src="historia/curacao.jpg" alt="Fundación">
-
-            </div>
-          </div>
-          
-          <div class="timeline-item right">
-            <div class="timeline-item-content">
-              <h3>Apertura...... </h3>
-              <p class="info">En 2017, decidimos abrir operaciones en la Zona Libre de Colón, Panamá.</p>
-              <p class="info">En 2018, abrimos nuestra sucursal en la Zona Libre de Colón oficialmente.</p>
-              <img src="historia/zona.jpg" alt="Expansión">
-            </div>
-          </div>
-          
-          <div class="timeline-item left">
-            <div class="timeline-item-content">
-              <h3>Actualidad.....</h3>
-              <p class="info">Hemos estado haciendo crecer nuestro negocio de manera constante durante los últimos años.</p>
-              <p class="info">Hemos ampliado nuestros mercados y clientela para incluir Centroamérica.</p>
-              <p class="info">Esperamos un mayor crecimiento y expansión en el futuro cercano en Panamá y estamos muy entusiasmados con las perspectivas que tenemos disponibles.</p>
-              <img src="historia/mpj.png" alt="Innovación">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
       <header>
-        <h1 class="tit">Nuestra Historia</h1>
+        <h1 class="tit" id="titulo"></h1>
     </header>
-
-    <section id="chapter1" class="story-chapter">
-        <div class="content">
-            <h2>Cap 1: Nuestros comienzos....</h2>
-            <p class="info">Nuestros orígenes son en Curacao, atendiendo todo el Caribe, como Aruba, St Lucia, Granada, Guyana, Barbados, Trinidad & Tobago, como clientes durante más de 30 años.</p>
-        </div>
-    </section>
-
-    <section id="chapter2" class="story-chapter">
-        <div class="content">
-            <h2>Cap 2: Apertura....</h2>
-            <p class="info">En 2017, decidimos abrir operaciones en la Zona Libre de Colón, Panamá.</p>
-            <p class="info">En 2018, abrimos nuestra sucursal en la Zona Libre de Colón oficialmente.</p>
-        </div>
-    </section>
-
-    <section id="chapter3" class="story-chapter">
-        <div class="content">
-            <h2>Cap 3: Actualidad</h2>
-            <p class="info">Hemos estado haciendo crecer nuestro negocio de manera constante durante los últimos años.</p>
-              <p class="info">Hemos ampliado nuestros mercados y clientela para incluir Centroamérica.</p>
-              <p class="info">Esperamos un mayor crecimiento y expansión en el futuro cercano en Panamá y estamos muy entusiasmados con las perspectivas que tenemos disponibles.</p>
-              
-        </div>
-    </section>
-
-
-<div class="journey-map">
-  <h1 class="tit">Nuestra Historia</h1>
-  <div class="milestone" id="milestone1">
-      <div class="content">
-          <h2>Nustros Comienzos...</h2>
-          <p>Nuestros orígenes son en Curacao, atendiendo todo el Caribe, como Aruba, St Lucia, Granada, Guyana, Barbados, Trinidad & Tobago, como clientes durante más de 30 años.</p>
-          <img class="ima" src="historia/curacao.jpg" alt="Milestone 1 Image">
-      </div>
-  </div>
-  <div class="milestone" id="milestone2">
-      <div class="content">
-          <h2>Apertura...</h2>
-          <p class="info">En 2017, decidimos abrir operaciones en la Zona Libre de Colón, Panamá.</p>
-            <p class="info">En 2018, abrimos nuestra sucursal en la Zona Libre de Colón oficialmente.</p>
-          <img class="ima" src="historia/zona.jpg" alt="Milestone 1 Image">
-      </div>
-  </div>
-  <div class="milestone" id="milestone3">
-      <div class="content">
-          <h2>Actualidad...</h2>
-          <p class="info">Hemos estado haciendo crecer nuestro negocio de manera constante durante los últimos años.</p>
-          <p class="info">Hemos ampliado nuestros mercados y clientela para incluir Centroamérica.</p>
-          <p class="info">Esperamos un mayor crecimiento y expansión en el futuro cercano en Panamá y estamos muy entusiasmados con las perspectivas que tenemos disponibles.</p>
-          <img class="ima" src="historia/mpj.png" alt="Milestone 1 Image">
-      </div>
-  </div>
-</div>
 
 <div class="container">
   <section class="py-5">
       <div class="row">
           <div class="col-md-12">
               <div class="image-description">
-                  <img src="historia/curacao.jpg" alt="Descripción de la imagen">
+                  <img class="foto" src="../img/historia/curacao.jpg" alt="Descripción de la imagen">
                   <div class="description">
                       <h3>Nuestros Comienzos </h3>
                       <p class="justify-text">Nuestros orígenes son en Curacao, atendiendo todo el Caribe, como Aruba, St Lucia, Granada, Guyana, Barbados, Trinidad & Tobago, como clientes durante más de 30 años.</p>
@@ -142,17 +72,16 @@
           <div class="col-md-12">
             <div class="image-description">
                 <div class="description">
-                    <h3> Apertura </h3>
-                    <p class="justify-text">En 2017, decidimos abrir operaciones en la Zona Libre de Colón, Panamá.</p>
-                    <p class="justify-text">En 2018, abrimos nuestra sucursal en la Zona Libre de Colón oficialmente.</p>
+                  <h3> Apertura </h3>
+                  <p class="justify-text">En 2017, decidimos abrir operaciones en la Zona Libre de Colón, Panamá.</p>
+                  <p class="justify-text">En 2018, abrimos nuestra sucursal en la Zona Libre de Colón oficialmente.</p>
                 </div>
-                <img src="historia/zona.jpg" alt="Descripción de la imagen">
+                <img src="../img/historia/completa.jpg" alt="Descripción de la imagen">
             </div>
-        </div>
-        <div class="b-example-divider"></div>
+        
         <div class="col-md-12">
           <div class="image-description">
-              <img src="historia/mpj.png" alt="Descripción de la imagen">
+              <img src="../img/historia/mpj.png" alt="Descripción de la imagen">
               <div class="description">
                   <h3> Actualidad </h3>
                   <p class="justify-text">Hemos estado haciendo crecer nuestro negocio de manera constante durante los últimos años.</p>
@@ -166,43 +95,50 @@
 </div>
 
 
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top pie">
-      <div class="">
-      </div>
-  
-      <div class="col mb-3 ">
-        <a href="inicio.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <img src="img/logo-sinfondo.png" alt="">
-        </a>
-        <p class=" text-white">&copy; 2024</p>
-      </div>
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top pie">
+  <div class="">
 
-      <div class="col mb-3">
-        <h5>Redes</h5>
-        <ul class="nav flex-column  text-white color redes ">
-          <a href="https://www.instagram.com/mpjinternational" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i  class="bi bi-instagram"> Instagram</i></li></a>
-          <a href="https://www.facebook.com/mpjinternationalpanama?mibextid=LQQJ4d" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-facebook"> Facebook</i></li></a>
-          <a href="https://www.tiktok.com/@mpjinternational.zl" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-tiktok"> Tiktok</i></li></a>
-          <a href="https://api.whatsapp.com/send?phone=50768361715" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-whatsapp"> Whatsapp</i></li></a> 
-        </ul>
-      </div>
+  </div>
+
+  <div class="col mb-3 ">
+    <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+      <img src="../img/logo-sinfondo.png" alt="">
+    </a>
+    <p class=" text-white">&copy; 2024</p>
+
+  </div>
+
   
-      <div class="col mb-3">
-        <h5>Ubicación</h5>
-        <ul class="nav flex-column">
-          <a href="https://www.google.com/maps/place/MPJ+International+Zona+Libre+S.A./@9.3545053,-79.8943296,17z/data=!4m6!3m5!1s0x8fab6dae320edfa5:0x7f8a4453b6f78a20!8m2!3d9.3545053!4d-79.8943296!16s%2Fg%2F11s6j3n82f?entry=ttu" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-geo-alt-fill"> Calle 14 Ave. Rooselt, Zona Libre de Colón, Rep. de Panamá</i></li></a>
-        </ul>
-        <h5>Teléfonos</h5>
-        <ul class="nav flex-column">
-           <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0001</i></li>
-           <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0002</i></li>
-           <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0003</i></li>
-        </ul>
-      </div>
-    </footer>
+
+  <div class="col mb-3">
+    <h5 id="redes"></h5>
+    <ul class="nav flex-column  text-white color redes ">
+      <a href="https://www.instagram.com/mpjinternational" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i  class="bi bi-instagram"> Instagram</i></li></a>
+      <a href="https://www.facebook.com/mpjinternationalpanama?mibextid=LQQJ4d" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-facebook"> Facebook</i></li></a>
+      <a href="https://www.tiktok.com/@mpjinternational.zl" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-tiktok"> Tiktok</i></li></a>
+      <a href="https://api.whatsapp.com/send?phone=50768361715" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-whatsapp"> Whatsapp</i></li></a>
+      
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5 id="ubi"></h5>
+    <ul class="nav flex-column">
+      <a href="https://www.google.com/maps/place/MPJ+International+Zona+Libre+S.A./@9.3545053,-79.8943296,17z/data=!4m6!3m5!1s0x8fab6dae320edfa5:0x7f8a4453b6f78a20!8m2!3d9.3545053!4d-79.8943296!16s%2Fg%2F11s6j3n82f?entry=ttu" class="text-decoration-none text-white"> <li class="nav-item mb-2"><i class="bi bi-geo-alt-fill"> Calle 14 Ave. Rooselt, Zona Libre de Colón, Rep. de Panamá</i></li></a>
+    </ul>
+
+    <h5 id="tel"></h5>
+    <ul class="nav flex-column">
+       <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0001</i></li>
+       <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0002</i></li>
+       <li class="nav-item mb-2"><i class="bi bi-telephone"> 472-0003</i></li>
+    </ul>
+  </div> 
+</footer>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-<script src="css/script.js"></script>
+<script src="../javascript/somos.js"></script>
+<script src="../javascript/inicio.js"></script>
  </body>
 </html>
