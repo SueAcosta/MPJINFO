@@ -47,6 +47,7 @@ html {
     #navbarMenu.active {
         display: flex;
     }
+
 }
 
 /* Botón de idioma */
@@ -169,6 +170,39 @@ html {
     border-radius: 1950px;
     margin-left: -200px;
 }
+@media (max-width: 992px) {
+    .cover {
+        height: 120vh;
+    }  
+    .cover-content {
+        top: 70%;
+        left: 0%; 
+    } 
+    .cover-content h1 {
+        font-size: 3rem;
+    }  
+    .cuadrito {
+        margin-left: 300px;
+        width: 550px;
+    }    
+    .imagen {
+        height: 300px;
+        margin-left: 350%;
+        margin-top: 0%;
+    }
+
+    .circulito_blanco {
+        position: absolute;
+        background: white;
+        width: 100px;
+        height: 900px;
+        margin-top: 20px;
+        border-radius: 1950px;
+        margin-left: -200px;
+    }
+    
+}
+
 
 /*--------------------------CARROUSEL-------------------------------------*/
 .carousel-item img {
@@ -176,7 +210,6 @@ html {
     height: 50px;
 
 }
-
 .carousel-item .row+.row {
     margin-top: 10px;
 }
