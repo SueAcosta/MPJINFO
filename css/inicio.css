@@ -264,6 +264,22 @@ html {
 p {
     text-align: justify;
 }
+@media (max-width: 992px) {
+    .contact-box {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna */
+    }
+    
+    .contact-box .text-content {
+        flex: 1;
+        margin-bottom: 20px; /* Ajusta el margen para separar del contenido de abajo */
+    }
+    
+    .contact-box .info-content {
+        flex: 1; /* Cambia el valor para que ambos elementos se distribuyan equitativamente en columnas */
+    }
+
+}
 
 
 /*---------------------boton flotante---------------------*/
