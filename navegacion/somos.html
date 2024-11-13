@@ -16,46 +16,46 @@
     <header>
       <div class="px-3 py-2 menu border-bottom">
         <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <img src="../img/logo-sinfondo.png" alt="">
-            </a>
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small opcion">
-              <li>
-                <a id="item1" href="../index.html" class="nav-link text-white color text-center" ></a>
-              </li>
-              <li>
-                <a href="somos.html" class="nav-link text-white" id="item2"></a>
-              </li>
-              <li>
-                <a href="https://mpjzl.com/webcliente" target="_blank" class="nav-link text-white" id="item3"></a>
-              </li>
-              <li>
-                <a href="../navegacion/contacto.html" class="nav-link text-white" id="item4"></a>
-              </li>
-            </ul>
-            <div class="language-selector">
-              <button class="language-button">
-                  <img src="../img/es.png" alt="Español" class="flag-icon">
-                  Español
-              </button>
-              <div class="dropdown-content">
-                  <button onclick="setLanguage('es')">
-                      <img src="../img/es.png" alt="Español" class="flag-icon">
-                      Español
-                  </button>
-                  <button onclick="setLanguage('en')">
-                      <img src="../img/en.png" alt="English" class="flag-icon">
-                      English
-                  </button>
-              </div>
-          </div>
-          </div>
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <!-- Logo -->
+                <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                    <img src="../img/logo-sinfondo.png" alt="Logo" class="logo">
+                </a>
+                
+                <!-- Botón de menú hamburguesa (solo en pantallas pequeñas) -->
+                <button class="navbar-toggler d-lg-none text-white" onclick="toggleMenu()">
+                    &#9776;
+                </button>
+                
+                <!-- Opciones de navegación -->
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small opcion" id="navbarMenu">
+                    <li><a href="../index.html" class="nav-link text-white color text-center" id="item1">Inicio</a></li>
+                    <li><a href="somos.html" class="nav-link text-white text-center" id="item2">Nosotros</a></li>
+                    <li><a href="https://mpjzl.com/webcliente" target="_blank" class="nav-link text-white text-center" id="item3">Clientes</a></li>
+                    <li><a href="contacto.html" class="nav-link text-white text-center" id="item4">Contacto</a></li>
+                </ul>
+                
+                <!-- Selector de idioma -->
+                <div class="language-selector">
+                    <button class="language-button">
+                        <img src="./img/es.png" alt="Español" class="flag-icon"> Español
+                    </button>
+                    <div class="dropdown-content">
+                        <button onclick="setLanguage('es')">
+                            <img src="./img/es.png" alt="Español" class="flag-icon"> Español
+                        </button>
+                        <button onclick="setLanguage('en')">
+                            <img src="./img/en.png" alt="English" class="flag-icon"> English
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <header>
-        <h1 class="tit" id="titulo"></h1>
+    </div>
+    
     </header>
+        <h1 class="tit" id="titulo"></h1>
+    
 
 <div class="container">
   <section class="py-5">
