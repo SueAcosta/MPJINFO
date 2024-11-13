@@ -172,7 +172,7 @@ html {
 }
 @media (max-width: 992px) {
     .cover {
-        height: 120vh;
+        height: 150vh;
     }  
     .cover-content {
         top: 70%;
@@ -182,23 +182,17 @@ html {
         font-size: 3rem;
     }  
     .cuadrito {
-        margin-left: 250px;
-        width: 400px;
+        margin-left: 190px;
+        width: 350px;
     }    
     .imagen {
         height: 300px;
-        margin-left: 280%;
+        margin-left: 220%;
         margin-top: 0%;
     }
 
     .circulito_blanco {
-        position: absolute;
-        background: white;
         width: 100px;
-        height: 900px;
-        margin-top: 20px;
-        border-radius: 1950px;
-        margin-left: -200px;
     }
     
 }
