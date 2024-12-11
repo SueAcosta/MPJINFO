@@ -153,9 +153,9 @@ html {
 }
 
 .imagen {
-    height: 480px;
-    margin-left: 210px;
-    margin-top: 10px;
+    height: 50%;
+    margin-left: 30%;
+    margin-top:4%;
     border-radius: 1950px;
 }
 
@@ -197,13 +197,6 @@ html {
         width: 100px;
     }
     
-}
-
-@media (min-width: 993px) {  
-    .imagen {
-        width:75%;
-       height: 70%;
-    }
 }
 
 /*--------------------------CARROUSEL-------------------------------------*/
