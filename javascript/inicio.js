@@ -18,7 +18,8 @@ const translations = {
         ver: "Ver Más!",
         redes: "Redes",
         ubi: "Ubicación",
-        tel: "Teléfonos"
+        tel: "Teléfonos",
+        correo: "Correo"
     },
     en: {
         item1: "Home",
@@ -39,7 +40,8 @@ const translations = {
         ver: "More!",
         redes: "Social networks",
         ubi: "Location",
-        tel: "Phones"
+        tel: "Phones",
+         correo: "Email"
     }
 };
 
@@ -69,6 +71,7 @@ function loadContent(lang) {
     document.getElementById('redes').innerText = content.redes;
     document.getElementById('ubi').innerText = content.ubi;
     document.getElementById('tel').innerText = content.tel;
+    document.getElementById('correo').innerText = content.correo;
 
 
     // Cambia la bandera y el texto del botón principal según el idioma
