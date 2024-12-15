@@ -152,10 +152,16 @@ html {
 }
 
 .imagen {
-    height: 48%;
-    margin-left: 30%;
-    margin-top:3%;
-    border-radius: 1950px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.imagen:hover {
+    transform: scale(0.95);
 }
 
 .imagensita {
@@ -165,44 +171,50 @@ html {
 .circulito_blanco {
     position: absolute;
     background: white;
-    width: 850px;
-    height: 900px;
+    aspect-ratio: 1;
+    width: min(850px, 80%);
     margin-top: 20px;
-    border-radius: 1950px;
+    border-radius: 50%;
     margin-left: -200px;
+    overflow: hidden;
 }
+
 @media (max-width: 992px) {
     .cover {
-        height: 150vh;
-    }  
-    .cover-content {
-        top: 60%;
-        left: 0%; 
-    } 
-    .cover-content h1 {
-        font-size: 3rem;
-    }  
-    .cuadrito {
-        margin-left: 190px;
-        width: 350px;
-    }    
-    .imagen {
-        height: 300px;
-        margin-left: 220%;
-        margin-top: 0%;
-    }
-
-    .circulito_blanco {
-        width: 100px;
+        min-height: 100vh;
+        height: auto;
+        padding: 2rem 0;
     }
     
+    .circulito_blanco {
+        position: relative;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+        transform: translateX(0);
+    }
+    
+    .cover-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 2rem auto;
+        width: 90%;
+        max-width: 600px;
+    }
+    
+    .cuadrito {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 /*--------------------------CARROUSEL-------------------------------------*/
 .carousel-item img {
-    width: 50px;
-    height: 50px;
-
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
 .carousel-item .row+.row {
     margin-top: 10px;
