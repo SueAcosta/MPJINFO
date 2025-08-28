@@ -12,7 +12,7 @@ const translations = {
         d2:"Calle 14 Ave. Rooselt, Zona Libre de Colón, Rep. de Panamá",
         tit4:"Teléfonos:",
         tit5:"Correo Electrónico:",
-        
+        mas:"KYC",
         redes: "Redes",
         ubi: "Ubicación",
         tel: "Teléfonos"
@@ -30,7 +30,7 @@ const translations = {
         d2:"14th Street, Roosevelt Ave., Colon Free Zone, Republic of Panama",
         tit4:"Phones:",
         tit5:"Email:",
-       
+       mas:"KYC",
         redes: "Social networks",
         ubi: "Location",
         tel: "Phones"
@@ -55,6 +55,8 @@ function loadContent(lang) {
     document.getElementById('d2').innerText = content.d2;
     document.getElementById('tit4').innerText = content.tit4; 
     document.getElementById('tit5').innerText = content.tit5;
+    document.getElementById('mas').innerText = content.mas;
+
 
     document.getElementById('redes').innerText = content.redes;
     document.getElementById('ubi').innerText = content.ubi;

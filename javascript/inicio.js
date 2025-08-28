@@ -19,7 +19,21 @@ const translations = {
         redes: "Redes",
         ubi: "Ubicación",
         tel: "Teléfonos",
-        correo: "Correo"
+        correo: "Correo",
+        c1: "Alta Calidad",
+        c2: "Inventario Confiable",
+        c3: "Precios Mayoristas",
+        c4: "Enfoque en el Cliente",
+        p1: "Trabajamos con las marcas más reconocidas del mercado.",
+        p2: "Stock disponible y entregas rápidas.",
+        p3: "Mejores márgenes para tu negocio.",
+        p4: "Soporte y acompañamiento personalizado.",
+        ben: "Beneficios",
+        cat: "Categorías",
+        cat1: "Artículos De Hogar",
+        cat2: "Mueblería",
+        cat3: "Cortinas",
+        cat4: "Plásticos"
     },
     en: {
         item1: "Home",
@@ -41,7 +55,21 @@ const translations = {
         redes: "Social networks",
         ubi: "Location",
         tel: "Phones",
-         correo: "Email"
+        correo: "Email",
+        c1: "High Quality",
+        c2: "Reliable Inventory",
+        c3: "Wholesale Prices",
+        c4: "Customer Focus",
+        p1: "We work with the most recognized brands in the market.",
+        p2: "Available stock and fast deliveries.",
+        p3: "Better margins for your business.",
+        p4: "Personalized support and guidance.",
+        ben: "Our Benefits",
+        cat: "Categories",
+        cat1: "Household Goods",
+        cat2: "Furniture",
+        cat3: "Curtains",
+        cat4: "Plastics"
     }
 };
 
@@ -56,7 +84,7 @@ function loadContent(lang) {
     document.getElementById('item2').innerText = content.item2;
     document.getElementById('item3').innerText = content.item3;
     document.getElementById('item4').innerText = content.item4;
-  /* document.getElementById('titulo1').innerText = content.titulo1;*/
+    /* document.getElementById('titulo1').innerText = content.titulo1;*/
     document.getElementById('titulo2').innerText = content.titulo2;
     document.getElementById('descrip1').innerText = content.descrip1;
     document.getElementById('mas').innerText = content.mas;
@@ -72,7 +100,21 @@ function loadContent(lang) {
     document.getElementById('ubi').innerText = content.ubi;
     document.getElementById('tel').innerText = content.tel;
     document.getElementById('correo').innerText = content.correo;
-
+    document.getElementById('c1').innerText = content.c1;
+    document.getElementById('c2').innerText = content.c2;
+    document.getElementById('c3').innerText = content.c3;
+    document.getElementById('c4').innerText = content.c4;
+    document.getElementById('p1').innerText = content.p1;
+    document.getElementById('p2').innerText = content.p2;
+    document.getElementById('p3').innerText = content.p3;
+    document.getElementById('p4').innerText = content.p4;
+    document.getElementById('ben').innerText = content.ben;
+     document.getElementById('cat').innerText = content.cat; 
+      document.getElementById('cat1').innerText = content.cat1; 
+       document.getElementById('cat2').innerText = content.cat2; 
+        document.getElementById('cat3').innerText = content.cat3; 
+         document.getElementById('cat4').innerText = content.cat4; 
+     
 
     // Cambia la bandera y el texto del botón principal según el idioma
     const languageButton = document.querySelector('.language-button');
